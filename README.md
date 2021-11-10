@@ -1,1 +1,96 @@
 # TKWEB14-KhucThuaAn
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Khúc An</title>
+	<style>
+		button: hover{
+			background-color: white;
+		}
+		.form{
+			padding: 30px 90px;
+			border: 1px solid blue;
+			display: flex;
+			border-radius: 5px;
+			flex-direction: column;
+			width: 50%;
+			margin: 30px auto;
+		}
+		input{
+			margin: 10px 0;
+			border: 1px solid blue ;
+			border-radius: 2px;
+			padding: 4px;
+		}
+		.submitt{
+			background-color: blue;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			padding: 5px;
+			width: 80px;
+		}
+	</style>
+	<SCRIPT language="JavaScript">
+ function CapNhat( )
+ {
+ document.title = TieuDe.value; /* Thay đổi tiêu đề của trang Web */
+ document.body.style.background-color = MauNen.value; /* Thay đổi màu nền của trang */
+ document.fgColor = MauChu.value; /* Thay đổi màu chữ của trang */
+ window.defaultStatus = TrangThai.value; /* Thay đổi dòng trạng thái của cửa sổ */
+ }
+ </SCRIPT>
+
+</head>
+<body>
+	<p id="khuc"></p>
+	<script type="text/javascript">
+		var a= "Khúc Thừa An ";
+		var b= "TKWEB14";
+		document.getElementById("khuc").innerHTML="Khúc Thừa An";
+		document.write(a+b);
+		// window.alert("Khúc Thừa An");
+		
+
+	</script><br>
+	<button type="button" onclick="alert('Khúc Thừa An')" style="width: 50px; height: 30px; background-color: aqua;">Click</button>
+	<button onclick="innerHTML='Khúc Thừa An'" style="width: 190px; height: 30px; background-color: red;">Click</button>
+	<button onclick="document.write('Khúc Thừa An')" style="width: 50px; height: 30px; background-color: green; border-radius: 3px; border-color: black;">Click</button>
+	<button onClick="document.bgColor = 'pink' "> Click vào đây để đổi màu nền</button>
+	<div class="form">
+		<label for="mail">Email</label>
+		<input type="text" name="mail" placeholder="Email">
+		<label>Pass word</label>
+		<input type="Pass" name="" placeholder="Mật khẩu">
+		<label for="mail">Tên đăng nhập</label>
+		<input type="text" name="mail" placeholder="Email">
+		<label>Nhập lại mật khẩu</label>
+		<input type="Pass" name="" placeholder="Nhập lại mật khẩu">
+		<input type="submit" name="" value="Create" class="submitt">
+
+
+	</div>
+	<script language = JavaScript>
+		 function DoiMau()
+		 {
+
+		 window.document.bgColor = Mau.value;
+		 }
+	</script>
+	 
+	 Bạn hãy chọn màu nền:
+	 <Select name ="Mau" onchange = "DoiMau();" >
+	 <option value ='red'> Màu đỏ </option>
+	 <option value = "blue"> Màu xanh </option>
+	 <option value = "brown"> Màu nâu </option>
+	 <option value = "lavender"> Màu xanh nhạt</option>
+	 </select><br>
+
+	<INPUT type="text" name="TieuDe" value="Tiêu đề mới">
+	<INPUT type="text" name="MauNen" value="Nhập màu vào đây"> <BR>
+	<INPUT type="text" name="MauChu" value="Nhập màu chữ vào đây">
+	<INPUT type="text" name="TrangThai" value="Nhập dòng trạng thái vào đây "> <BR>
+	<INPUT type="button" name ="ThayDoi" value="Thay đổi" onClick="Ham( );">
+
+</body>
+</html>
